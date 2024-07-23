@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "36"
+mappingDefinitions:
+  SRC:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
+  STG:
+    database: QA_DB
+    schema: QA_DB_SCHEMA
+name: Test - David E
+type: Environment
