@@ -4,6 +4,12 @@ mappingDefinitions:
   SRC:
     database: COALESCE_SAMPLE_DATABASE
     schema: TPCH_SF001
+  SRC1:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: MANY_TABLES
+  SRC2:
+    database: DEV_JACOB
+    schema: NEW_TEST_SCHEMA
   STG:
     database: QA_DB
     schema: QA_DB_SCHEMA
