@@ -1,0 +1,115 @@
+fileVersion: 1
+id: e5db572f-e968-4ffc-ae70-d77bb2f921a1
+name: STG_PARTSUPP_COALESCE_INTERNAL_TABLE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba542673-f4d7-4c7f-aa19-9922f0eca35f
+          stepCounter: e5db572f-e968-4ffc-ae70-d77bb2f921a1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to P_PARTKEY
+        name: PS_PARTKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c94beceb-d428-464b-98e5-94993067835e
+          stepCounter: e5db572f-e968-4ffc-ae70-d77bb2f921a1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to S_SUPPKEY
+        name: PS_SUPPKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35d324d0-66cc-4f97-8513-85a9873191fa
+          stepCounter: e5db572f-e968-4ffc-ae70-d77bb2f921a1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PS_AVAILQTY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4444a227-d567-449b-9f78-95526b6021ce
+          stepCounter: e5db572f-e968-4ffc-ae70-d77bb2f921a1
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 07938e60-3fc0-43af-ba04-b2550316c8d3
+          stepCounter: e5db572f-e968-4ffc-ae70-d77bb2f921a1
+        config: {}
+        dataType: VARCHAR(199)
+        defaultValue: ""
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC1', 'STG_PARTSUPP_COALESCE_INTERNAL_TABLE') }}
+  name: STG_PARTSUPP_COALESCE_INTERNAL_TABLE
+  schema: ""
+  sqlType: Source
+  table: STG_PARTSUPP_COALESCE_INTERNAL_TABLE
+  type: sourceInput
+  version: 1
+type: Node

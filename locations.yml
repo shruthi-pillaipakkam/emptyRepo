@@ -1,0 +1,7 @@
+defaultStorageMapping: STG
+fileVersion: 1
+locations:
+  - SRC
+  - SRC1
+  - SRC2
+  - STG
